@@ -39,28 +39,23 @@ void loop() {
   if(input == "u"){
     myservoL.write(0);
     myservoR.write(180);  
-    delay(100);
   }
   else if(input == "d"){
     myservoL.write(180);
     myservoR.write(0);
-    delay(100);
   }
   else if(input == "l"){
     myservoL.write(0);
     myservoR.write(0);
-    delay(100);
   }
   else if(input == "r"){
     myservoL.write(180);
     myservoR.write(180);
-    delay(100);
   }
-  else
+  else if(input == "s")
   {
     myservoL.write(90);
     myservoR.write(90);
-    delay(100);
   }
   
 }
