@@ -1,7 +1,7 @@
-<html>
+﻿<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GBA.js</title>
+<title>Vainos GBA.js Test</title>
 <link rel="stylesheet" href="resources/main.css">
 <script src="js/util.js"></script>
 <script src="js/core.js"></script>
@@ -140,7 +140,7 @@ function reset() {
 	gba.pause();
 	gba.reset();
 	var load = document.getElementById('select');
-	load.textContent = 'SELECT';
+	load.textContent = 'SELECT ROM';
 	var crash = document.getElementById('crash');
 	if (crash) {
 		var context = gba.targetCanvas.getContext('2d');
@@ -291,7 +291,7 @@ document.addEventListener('webkitfullscreenchange', function() {
 <canvas id="screen" width="480" height="320"></canvas>
 <section id="controls2">
 	<div id="preload2">
-		<button class="bigbutton" id="select" onclick="document.getElementById('loader').click()">SELECT</button>
+		<button class="bigbutton" id="select" onclick="document.getElementById('loader').click()">SELECT ROM</button>
 		<input id="loader" type="file" accept=".gba" onchange="run(this.files[0]);">
 		<input id="saveloader" type="file" onchange="uploadSavedataPending(this.files[0]);">
 		<button id="pause" class="bigbutton" onclick="togglePause()">PAUSE</button>

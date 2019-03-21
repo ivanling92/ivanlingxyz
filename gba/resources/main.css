@@ -30,7 +30,7 @@ button {
 
 #controls::before {
 	content: "";
-	display: block;
+	display: inline;
 	height: 30px;
 	width: 647px;
 	border-radius: 5px / 15px;
@@ -78,7 +78,7 @@ button {
 	padding: 2px 10px 5px;
 	border: 0 solid rgba(0, 0, 0, 0.4);
 	border-width: 3px 1px 0px;
-	display: inline;
+	display: block;
 	box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.2) inset;
 	margin: 0 0 20px;
 }
